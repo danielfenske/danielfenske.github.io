@@ -1,0 +1,17 @@
+@import './variables';
+
+.navBarContainer {
+    @include flexRow(12px);
+    height: 75px;
+    width: 100vw;
+    background-color: $secondaryColor;
+    position: sticky;
+    .navLink {
+        color: $black;
+        text-decoration: none;
+        font-size: $navText;
+        :hover{
+            color: $primaryColor;
+        }
+    }
+}

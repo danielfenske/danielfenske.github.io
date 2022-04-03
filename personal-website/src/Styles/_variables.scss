@@ -1,5 +1,39 @@
 // COLOR PALLETTE
 $primaryColor: #2E86C1;
 $secondaryColor: #A6A6A6;
-$black: black;
+$black: rgb(25, 25, 25);
 $white: white;
+
+// TYPOGRAPHY
+$fontFamily: 'Source Sans Pro', sans-serif;
+$navText: 24px;
+$headerText: 30px;
+$subHeaderText: 24px;
+$paragraphText: 18px;
+$bold: bold;
+$normal: normal;
+
+// MIXINS
+// POSITIONING
+@mixin flexColumn($gap) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: $gap;
+}
+
+@mixin flexRow($gap) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: $gap;
+}
+
+// TYPOGRAPHY
+@mixin text($color, $textType, $fontWeight) {
+    color: $color;
+    font-size: $textType;
+    font-weight: $fontWeight;
+}
