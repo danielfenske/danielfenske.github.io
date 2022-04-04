@@ -1,25 +1,36 @@
 @import "./variables";
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: $fontFamily;
+  margin: 0;
+  padding: 0;
+  font-family: $fontFamily;
 }
 
 .App {
-    background-color: $white;
-    width: 100vw;
-    height: 100vh;
+  @include flexColumn(24px);
+  justify-content: flex-start;
+  background-color: $white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.viewContainer {
+  padding: 0px 50px;
 }
 
 h1 {
-    @include text($primaryColor, $headerText, $bold);
+  @include text($primaryColor, $headerText, $bold);
 }
 
 h2 {
-    @include text($secondaryColor, $subHeaderText, $normal);
+  @include text($secondaryColor, $subHeaderText, $normal);
 }
 
 p {
-    @include text($black, $paragraphText, $normal);
+  @include text($black, $paragraphText, $normal);
+}
+
+// BUTTONS
+button {
+    @include buttonFilled($white, $primaryColor);
 }

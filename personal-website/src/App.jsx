@@ -4,6 +4,7 @@ import { HashRouter as Router, Route, Redirect } from 'react-router-dom';
 
 // APP VIEWS
 import HomeView from './HomeView/HomeView';
+import PortfolioView from './PortfolioView/PortfolioView';
 
 
 // STYLING
@@ -17,6 +18,10 @@ function App() {
 
         <Route exact path="/home">
           <HomeView />
+        </Route>
+
+        <Route exact path="/portfolio">
+          <PortfolioView/>
         </Route>
       </Router>
     </div>

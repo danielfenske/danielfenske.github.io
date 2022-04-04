@@ -1,17 +1,29 @@
-@import './variables';
+@import "./variables";
 
 .navBarContainer {
-    @include flexRow(12px);
-    height: 75px;
-    width: 100vw;
-    background-color: $secondaryColor;
-    position: sticky;
+  @include flexColumn(12px);
+  height: 200px;
+  width: 100vw;
+  background-color: $lightGrey;
+  position: sticky;
+  img {
+      height: 100px;
+      width: 100px;
+  }
+  .lineBreak {
+      border: 1px solid $secondaryColor;
+      width: 50%;
+  }
+  .linksContainer {
+    @include flexRow(36px);
+    width: 50%;
     .navLink {
-        color: $black;
-        text-decoration: none;
-        font-size: $navText;
-        :hover{
-            color: $primaryColor;
-        }
+      color: $black;
+      text-decoration: none;
+      font-size: $navText;
+      :hover {
+        color: $primaryColor;
+      }
     }
+  }
 }
