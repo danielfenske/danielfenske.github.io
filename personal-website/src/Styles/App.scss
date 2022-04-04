@@ -31,6 +31,6 @@ p {
 }
 
 // BUTTONS
-button {
+.primaryBtn {
     @include buttonFilled($white, $primaryColor);
 }

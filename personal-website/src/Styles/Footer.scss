@@ -1,0 +1,22 @@
+@import "./variables";
+
+.footer {
+  bottom: 0;
+  position: absolute;
+  .iconContainer {
+    @include flexRow(15px);
+    justify-content: space-around;
+    padding-bottom: 25px;
+    a {
+      text-decoration: none;
+      color: $secondaryColor;
+      :visited {
+        text-decoration: none;
+        color: $secondaryColor;
+      }
+      :hover {
+        color: $primaryColor;
+      }
+    }
+  }
+}
